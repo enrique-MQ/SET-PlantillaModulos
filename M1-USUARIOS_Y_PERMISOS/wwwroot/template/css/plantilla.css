@@ -1,0 +1,131 @@
+
+
+@font-face {
+    font-family: "Encode Sans Light";
+    src: url("../fonts/EncodeSans-Light.ttf");
+}
+
+@font-face {
+    font-family: "Encode Sans Regular";
+    src: url("../fonts/EncodeSans-Regular.ttf");
+}
+
+@font-face {
+    font-family: "Encode Sans Medium";
+    src: url("../fonts/EncodeSans-Medium.ttf");
+}
+
+@font-face {
+    font-family: "Encode Sans Bold";
+    src: url("../fonts/EncodeSans-Bold.ttf");
+}
+
+@font-face {
+    font-family: "Calibri Regular";
+    src: url("../fonts/calibri-regular.ttf");
+}
+
+@font-face {
+    font-family: "Calibri Bold";
+    src: url("../fonts/calibri-bold.ttf");
+}
+
+    #divExample{
+        margin: 30px;
+        width: 20vw;
+        height: 20vw;
+    }
+
+
+    /* --- DIV EXAMPLE - FONT  -- */        
+    .text-custom{
+        color: rgb(17, 212, 7); opacity: 100%;
+        font-size: 22px;
+        font-family: "Encode Sans Bold";                                                        
+    }
+
+    /* --- TEXT-COLORS -- */        
+    .white-text{
+        color: white!important;
+    }
+
+    .dark-text{
+        color: black!important;
+        
+    }
+
+    
+    /* --- BACKGROUND -- */        
+    .red-show{        
+        background-color: #ab0033;
+        opacity: 100%;        
+    }
+
+    .gold-show{        
+        background-color: #bc955c;
+        opacity: 100%;        
+    }
+
+    .creme-show{        
+        background-color: #ddc9a3!important;
+        opacity: 100%;        
+    }
+
+    .gray-show{        
+        background-color: #54565a;
+        opacity: 100%;        
+    }
+
+    .white-show{        
+        background-color: white;        
+    }
+
+
+ 
+
+    /* --- FONT-- */
+    .txt-red-show{        
+        color: #ab0033!important;
+        opacity: 100%;        
+    }
+
+    .txt-gold-show{        
+        color: #bc955c!important;
+        opacity: 100%;        
+    }
+
+    .txt-creme-show{        
+        color: #ddc9a3;
+        opacity: 100%;        
+    }
+
+    .txt-gray-show{        
+        color: #54565a;
+        opacity: 100%;        
+    }
+
+    
+    /* OPACITY */
+    .show-80{                
+        opacity: 80%;        
+    }
+
+    .show-60{                
+        opacity: 60%;        
+    }
+
+    .show-40{                
+        opacity: 40%;        
+    }
+    
+    .show-20{                
+        opacity: 20%;        
+    }
+
+    .images-header{
+        width: 300px;
+    }
+
+
+
+    

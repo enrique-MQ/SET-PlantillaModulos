@@ -1,0 +1,230 @@
+
+
+#proBanner{
+    background-color: white;
+    border-bottom: #ab0033;
+    border-bottom-width: 13px;
+    border-bottom-style: solid;
+}
+
+#card-logo{
+    background-color: transparent;
+    box-shadow: none;
+}
+
+a, p, h1,h2,h3,h4,h5,div,label, select, input{
+    font-family: "Encode Sans Regular"!important;
+}
+
+a{
+    text-decoration: none;
+}
+
+.login-button{
+    color: white!important;
+    background-color: #ab0033!important;
+    border-radius: 20px;
+    height: 2.6rem!important;
+}
+
+.button-round {
+    border-radius: 20px;
+}
+
+.icon-round-left {
+    border-top-left-radius: 20px;
+    border-bottom-left-radius: 20px;
+    background: transparent;
+    border-right-color: #ccd4d9;
+    border-right-style: solid;
+    border-right-width: 2px;
+}
+
+.input-icon-group{
+    border-left: transparent;
+}
+
+.icon-round-right {
+    border-top-right-radius: 20px;
+    border-bottom-right-radius: 20px;
+}
+
+
+#top-header{
+    background-color: white;
+    justify-content: center;
+}
+
+.nav-item .nav-category:hover{
+    color: #ab0033 !important;;
+}
+
+.login-down-elements{
+    display: flex; 
+    justify-content: space-between;
+}
+
+
+.menu-title, .nav-link{
+    line-height: 1.5!important;
+}
+
+.nav-bar-top{
+    padding-top: 4.8rem !important; 
+    background-color: #dec99d;
+}
+
+.box-item-principal{
+    width: 200px;                     
+    background-color: #ab0033;    
+    color: white;   
+    padding-top: 15px
+  }
+
+  .box-item-secondary{
+    width: 200px;                 
+    background-color: #54565a;    
+    opacity: 60%;
+    color: white;  
+    padding: 15px 15px;
+           
+  }
+
+
+
+  .box-item-footer-down{                                  
+    color: white;
+    display: flex; 
+    justify-content: center; 
+    background-color: #54565a;
+    font-size: 10px;
+  }
+
+  .principal-item{
+    display: flex;
+    flex-grow: 5;
+    justify-content: start;
+    padding-left: 40px;            
+    padding-top: 15px
+  }
+
+  .individual-item{
+    display: flex;
+    flex-grow: 1;
+    justify-content: start;
+    padding-left: 40px;
+  }
+
+  .text-item-footer{
+    font-size: 10px;
+    line-height: 20px;
+  }
+
+  .footer{
+    padding: initial!important;            
+  }
+
+  .footer-subelement{
+    display: flex; 
+    justify-content: space-around;
+  }
+
+  .copy-right-txt{
+    padding: 10px 10px;
+  }
+
+
+@media (min-width: 1200px) and (min-width: 1800px) {
+    #nav-bar-top-out {
+        padding-top: 3rem !important;
+    }
+}
+
+
+
+
+    @media (min-width: 200px) and (max-width: 1000px) {
+        #top-header {
+            background-color: #dec99d;
+            justify-content: start;
+            padding-left: 5px !important;
+            padding-top: 0px !important;
+            padding-bottom: 0px !important;
+        }
+
+        #div-navegation {
+            width: 15px !important;
+        }
+
+
+        .images-header {
+            width: 200px;
+        }
+
+        /*ESTILOS PARA LA BARRA DE NAVEGACION DE USUARIOS**/
+        #nav-bar-top-in {
+            padding-top: 1rem !important;
+            background-color: #dec99d;
+        }
+
+        #nav-bar-top-out {
+            padding-top: 1.5rem !important;
+        }
+
+        #btn-show-menu {
+            padding-top: 35px;
+            font-size: 35px;
+        }
+
+        .text-item-footer {
+            font-size: 10px;
+            line-height: 15px;
+        }
+
+        .box-item-principal {
+            width: 430px;
+        }
+       
+
+    }
+
+    @media (min-width: 1000px) {
+            #top-header {
+                background-color: white;
+                justify-content: center;
+            }            
+
+            #imgTamLogo {
+                width: 300px;
+            }
+
+    }
+
+
+#title-img-mobile {
+    display: none;
+    text-align: center;
+}
+
+@media (min-width: 200px) and (max-width: 1000px) {
+
+    #title-img-mobile {
+        display: block;
+    }
+}
+
+
+@media screen and (max-width: 991px) {
+    #sidebar {
+        max-height: calc(130vh - 97px);
+        top: 70px;
+    }
+
+    #listMenu {
+        padding-top: 30px;
+    }
+
+    
+}
+
+

@@ -1,0 +1,138 @@
+﻿
+@using System.Security.Claims;
+
+<!-- TITULOS SUPERIORES. MENSAJE DE BIENVENIDA Y NOMBRE DEL MODULO A LA IZQUIERDA CON LISTA 
+DESPLEGABLE DE ROLES DEL USUARIO LOGEADO   -->
+<nav id="nav-bar-top-in" class="navbar default-layout col-lg-12 col-12 p-0 fixed-top d-flex align-items-top flex-row nav-bar-top" style="margin-top: 120px;">
+    <div class="text-center navbar-brand-wrapper d-flex align-items-center justify-content-start creme-show">
+        <div class="me-3">
+            <button class="navbar-toggler navbar-toggler align-self-center" type="button" data-bs-toggle="minimize">
+                <span class="icon-menu"></span>
+            </button>
+        </div>
+        <div>
+            <a class="navbar-brand brand-logo" href="#">
+                <h2 class="txt-gray-show">Bienvenido </h2>
+            </a>
+        </div>
+    </div>
+    <div class="navbar-menu-wrapper d-flex align-items-top" id="nav-top">
+        <ul class="navbar-nav">
+            <li class="nav-item font-weight-semibold d-none d-lg-block ms-0">
+                <img src="~/images/TITLE USER.png" width="600px" />
+            </li>
+        </ul>
+        <ul class="navbar-nav ms-auto">
+            <li class="nav-item">
+                <select onchange="SeleccionRol()" id="slcRol" title="Seleccione el rol con el cual desea acceder" class="form-select form-select-lg mb-3" aria-label=".form-select-lg example" style="margin-top: 15px; font-size: 14px;">
+                    @{
+                        string rolTurn = User.Claims.FirstOrDefault(c => c.Type.Contains("role")).Value;                        
+                        var rolesNames = ((ClaimsIdentity)User.Identity).Claims.Where(c => c.Type == "rolesNames").Select(c => c.Value);
+                        var idRoles = ((ClaimsIdentity)User.Identity).Claims.Where(c => c.Type == ClaimTypes.GroupSid).Select(c => c.Value);
+                        int cont = 0;
+                        foreach (var rol in rolesNames)
+                        { 
+                            if (rolTurn == rol)
+                            {
+                                <option selected value="@rol">@rol</option>
+                            } else
+                            {
+                                <option value="@rol">@rol</option>
+                            }
+
+                            cont++;
+                        }
+                    }
+                </select>
+            </li>
+
+            <li class="nav-item dropdown d-none d-lg-block user-dropdown" id="drop-down-user">
+
+                <a class="nav-link" id="UserDropdown" href="#" data-bs-toggle="dropdown" aria-expanded="false">
+                    <img class="img-xs rounded-circle" src="~/images/user.png" alt="Profile image">
+                </a>
+                <div class="dropdown-menu dropdown-menu-right navbar-dropdown" aria-labelledby="UserDropdown">
+                    <div class="dropdown-header text-center">
+                        <img class="img-md rounded-circle" src="~/images/user.png" alt="Profile image" width="60px">
+                        @{
+                            string name = User.Claims.FirstOrDefault(c => c.Type.Contains("name")).Value;
+                            var email = User.Claims.FirstOrDefault(c => c.Type.Contains("Correo")).Value;
+                            <p class="mb-1 mt-3 font-weight-semibold">@name</p>
+                            <p class="fw-light text-muted mb-0">@email</p>
+                        }
+                    </div>
+                    <a class="dropdown-item"><i class="dropdown-item-icon mdi mdi-account-outline text-primary me-2 txt-red-show"></i> Mi Perfil</a>
+                    <a asp-controller="Home" asp-action="Exit" class="dropdown-item"><i class="dropdown-item-icon mdi mdi-power text-primary me-2 txt-red-show"></i> Cerrar Sesión</a>
+                </div>
+            </li>
+        </ul>
+        <button id="btn-hamburger-menu" class="navbar-toggler navbar-toggler-right d-lg-none align-self-center" type="button" data-bs-toggle="offcanvas">
+            <span class="mdi mdi-menu"></span>
+        </button>
+    </div>
+</nav>
+
+<div id="title-img-mobile-users">
+    <img width="500px" src="~/images/MODULO1-INS.png" />
+</div>
+
+<style>
+
+    #drop-down-user {
+        display: block !important;
+    }
+
+    #title-img-mobile-users {
+        display: none;
+        text-align: center;
+    }
+
+    @@media (min-width: 200px) and (max-width: 1000px) {
+
+        #title-img-mobile-users {
+            display: block;
+        }
+
+        #nav-top {
+            padding-bottom: 0px !important;
+            padding-top: 40px !important;
+            background: #ddc79c !important;
+        }
+
+        #btn-hamburger-menu {
+            position: absolute !important;
+            padding-left: 0px !important;
+        }
+    }
+
+</style>
+
+
+<script>
+
+    async function SeleccionRol() {
+
+        var dataSlc = $("#slcRol").val();
+
+        var data = JSON.stringify(dataSlc);
+
+        await fetch('/Modulos/CambioRol/', {
+            method: "POST",
+            body: data,
+            headers: {
+                'Accept': 'application/json',
+                'Content-Type': 'application/json'
+            }
+        }).then()
+            .then(() => {
+                window.location.reload();
+            })
+            .catch(error => console.error('Unable to add item.', error));
+
+    }
+
+    function Hola(){
+        console.log("Hola");
+    }
+
+</script>

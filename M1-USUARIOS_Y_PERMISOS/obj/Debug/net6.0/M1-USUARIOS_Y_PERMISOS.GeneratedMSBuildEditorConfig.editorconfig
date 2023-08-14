@@ -1,0 +1,69 @@
+is_global = true
+build_property.TargetFramework = net6.0
+build_property.TargetPlatformMinVersion = 
+build_property.UsingMicrosoftNETSdkWeb = true
+build_property.ProjectTypeGuids = 
+build_property.InvariantGlobalization = 
+build_property.PlatformNeutralAssembly = 
+build_property.EnforceExtendedAnalyzerRules = 
+build_property._SupportedPlatformList = Linux,macOS,Windows
+build_property.RootNamespace = M1_USUARIOS_Y_PERMISOS
+build_property.RootNamespace = M1_USUARIOS_Y_PERMISOS
+build_property.ProjectDir = C:\Users\enriq\source\repos\M1-USUARIOS_Y_PERMISOS\
+build_property.RazorLangVersion = 6.0
+build_property.SupportLocalizedComponentNames = 
+build_property.GenerateRazorMetadataSourceChecksumAttributes = 
+build_property.MSBuildProjectDirectory = C:\Users\enriq\source\repos\M1-USUARIOS_Y_PERMISOS
+build_property._RazorSourceGeneratorDebug = 
+
+[C:/Users/enriq/source/repos/M1-USUARIOS_Y_PERMISOS/Views/Componentes/_SideBar.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQ29tcG9uZW50ZXNcX1NpZGVCYXIuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/enriq/source/repos/M1-USUARIOS_Y_PERMISOS/Views/Componentes/_TopTitles.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQ29tcG9uZW50ZXNcX1RvcFRpdGxlcy5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/enriq/source/repos/M1-USUARIOS_Y_PERMISOS/Views/Componentes/_TopTitlesUser.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQ29tcG9uZW50ZXNcX1RvcFRpdGxlc1VzZXIuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/enriq/source/repos/M1-USUARIOS_Y_PERMISOS/Views/Home/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxJbmRleC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/enriq/source/repos/M1-USUARIOS_Y_PERMISOS/Views/Home/IndexMenu.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxJbmRleE1lbnUuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/enriq/source/repos/M1-USUARIOS_Y_PERMISOS/Views/Home/IndexSinMenu.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxJbmRleFNpbk1lbnUuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/enriq/source/repos/M1-USUARIOS_Y_PERMISOS/Views/Shared/Error.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXEVycm9yLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/enriq/source/repos/M1-USUARIOS_Y_PERMISOS/Views/Shared/_ValidationScriptsPartial.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9WYWxpZGF0aW9uU2NyaXB0c1BhcnRpYWwuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/enriq/source/repos/M1-USUARIOS_Y_PERMISOS/Views/VistasGenerales/Content1.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVmlzdGFzR2VuZXJhbGVzXENvbnRlbnQxLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/enriq/source/repos/M1-USUARIOS_Y_PERMISOS/Views/VistasGenerales/Content2.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVmlzdGFzR2VuZXJhbGVzXENvbnRlbnQyLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/enriq/source/repos/M1-USUARIOS_Y_PERMISOS/Views/_ViewImports.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcX1ZpZXdJbXBvcnRzLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/enriq/source/repos/M1-USUARIOS_Y_PERMISOS/Views/_ViewStart.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcX1ZpZXdTdGFydC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/enriq/source/repos/M1-USUARIOS_Y_PERMISOS/Views/Shared/_Layout.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9MYXlvdXQuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = b-ei2pv07a62
